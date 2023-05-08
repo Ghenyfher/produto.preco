@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <locale.h>
+main(){
+	struct produtos { 
+	char nome [30];
+	float preco;
+	};
+	int x;
+	struct produtos matrizProdutos[5];
+	for (x=0;x<5;x++){
+		printf("\nDigite um produto: ");
+		scanf("%s", &matrizProdutos[x].nome);
+		printf("\nDigite um preço: ");
+		scanf("%f",&matrizProdutos[x].preco);
+		printf("\nProduto: %s",matrizProdutos[x].nome);
+		printf("\nPreço: %f ",matrizProdutos[x].preco);
+	}
+
+	
+} 
